@@ -4,7 +4,7 @@ body{
   margin: 0;
 }
 
-header{
+.header{
   position: fixed;
   z-index: 1;
   background-color: white;
@@ -45,7 +45,7 @@ header{
   padding-bottom: 3px;
 }
 
-main{
+.main{
   position: relative;
 }
 
@@ -61,23 +61,23 @@ main{
   font-weight: bold;
 }
 
-footer{
+.footer{
   height: 100px;
   display: flex;
   align-items: center;
   background-color: #252525;
 }
 
-footer a{
+.footer a{
   color: #aaaaaa;
 }
 
-footer p{
+.footer p{
   padding: 0 20px;
 }
 
 @media (min-width: 420px){
-  header{
+  .header{
     flex-direction: row;
   }
 
@@ -85,7 +85,7 @@ footer p{
     font-size: 2em;
   }
 
-  footer{
+  .footer{
     height: 150px;
   }
 }
@@ -96,7 +96,7 @@ footer p{
     font-size: 3em;
   }
 
-  footer{
+  .footer{
     height: 200px;
   }
 

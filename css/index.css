@@ -46,13 +46,12 @@ body{
   padding-bottom: 3px;
 }
 
-.main{
+.hero{
   margin-top: 100px;
   position: relative;
-}
-
-.hero{
-  width: 100%;
+  height: 300px;
+  background-image: url(http://adalab.es/wp-content/uploads/2017/02/banner_home_v3.jpeg);
+  background-size: cover;
 }
 
 .title{
@@ -79,7 +78,7 @@ body{
   padding: 0 20px;
 }
 
-@media (min-width: 420px){
+@media (min-width: 500px){
   .header{
     flex-direction: row;
   }
@@ -91,6 +90,10 @@ body{
   .footer{
     height: 150px;
   }
+
+  .hero{
+    height: 500px;
+  }
 }
 
 @media (min-width: 900px){
@@ -101,6 +104,10 @@ body{
 
   .footer{
     height: 200px;
+  }
+
+  .hero{
+    height: 800px;
   }
 
 }

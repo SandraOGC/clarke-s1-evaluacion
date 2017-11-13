@@ -1,10 +1,10 @@
-body{
-  font-family: Rubik, sans-serif;
-  color: #555555;
+body {
+  font-family: 'Rubik', sans-serif;
+  color: #555; /* Si un hexadecimal es igual dos a dos se puede abreviar #AABBCC -> #ABC */
   margin: 0;
 }
 
-.header{
+.header {
   position: fixed;
   top: 0;
   z-index: 1;
@@ -13,41 +13,43 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-bottom: 1px #aaa solid;
+  border-bottom: 1px solid #aaa;
 }
 
-.logo{
+.logo {
   padding: 10px 20px;
 }
 
-.menu{
+.menu {
   height: 100%;
   display: flex;
   align-items: center;
   padding-left: 0;
   margin: 0 20px;
-}
-.menu li{
+  text-transform: uppercase;
   list-style: none;
+}
+
+.menu li {
   padding: 10px;
 }
 
-.menu a{
-  text-transform: uppercase;
-  color: #555555;
+.menu a {
+  /* Esto es para que herede el color de body, así solo lo cambiamos en 1 sitio */
+  color: inherit;
 }
 
-.link{
+.link {
   text-decoration: none;
 }
 
-.link:hover{
+.link:hover {
   color: #3CDBC0;
-  border-bottom: 2px #3CDBC0 solid;
+  border-bottom: 2px solid #3CDBC0;
   padding-bottom: 3px;
 }
 
-.hero{
+.hero {
   margin-top: 100px;
   position: relative;
   height: 300px;
@@ -55,67 +57,73 @@ body{
   background-size: cover;
 }
 
-.title{
+.title {
   position: absolute;
   top: 100px;
   left: 50px;
   font-size: 1em;
   font-weight: bold;
+
+  /*
+    Esto sirve para que cada palabra se vea en una linea y lo que dice es
+    que cada una de ellas debe ocupar de ancho el 100% del viewport
+  */
   word-spacing: 100vw;
 }
 
-.footer{
-  height: 100px;
+.footer {
+  padding: 30px 20px;
   display: flex;
   align-items: center;
   background-color: #252525;
 }
 
-.footer a{
-  color: #aaaaaa;
+.footer a {
+  color: #aaa;
 }
 
-.footer p{
+.footer p {
   padding: 0 20px;
 }
 
-.arrow{
+.arrow {
   display: none;
 }
 
-@media (min-width: 500px){
-  .header{
+@media (min-width: 500px) {
+  .header {
     flex-direction: row;
   }
 
-  .title{
+  .title {
     font-size: 2em;
   }
 
-  .footer{
-    height: 150px;
+  .footer {
+    padding: 30px ;
   }
 
-  .hero{
+  .hero {
     height: 500px;
   }
 }
 
-@media (min-width: 900px){
+@media (min-width: 900px) {
 
-  .title{
+  .title {
     font-size: 3em;
   }
 
-  .footer{
-    height: 200px;
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
-  .hero{
+  .hero {
     height: 800px;
   }
 
-  .arrow{
+  .arrow {
     display: block;
     position: fixed;
     right: 20px;
@@ -123,15 +131,15 @@ body{
     width: 50px;
     height: 50px;
     font-size: 80px;
-    background-color: #aaaaaa;
+    background-color: #aaa;
     border-radius: 5px;
   }
 
-  .arrow:hover{
+  .arrow:hover {
     background-color: #3CDBC0;
   }
 
-  .arrow a{
+  .arrow a {
     text-decoration: none;
     line-height: 50px;
     padding: 8px;

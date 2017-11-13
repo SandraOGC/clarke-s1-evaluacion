@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Adalab - Form</title>
-    <link rel="stylesheet" href="css/form.css">
+    <title>Adalab - Contacto</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,700">
+    <link rel="stylesheet" href="styles/form.css">
   </head>
   <body>
     <header class="header">
       <div class="logo">
-        <a href="/"><img src="http://adalab.es/wp-content/uploads/2016/08/logo_adalab_80px.png" alt="Adalab logo"></a>
+        <a href="/">
+          <img src="http://adalab.es/wp-content/uploads/2016/08/logo_adalab_80px.png" alt="Adalab logo">
+        </a>
       </div>
+
       <nav>
         <ul class="menu">
           <li><a class="link" href="#">Blog</a></li>
@@ -18,25 +22,38 @@
         </ul>
       </nav>
     </header>
+
+
     <main>
-      <p>En Adalab estamos encantados de proporcionarte la información que necesitas. Hemos creado formularios específicos para inscribirte como alumna, para ser voluntario/a y para empresas que quieran acoger a nuestras alumnas. Para otras consultas completa el siguiente formulario y nos prondremos en contancto contigo. Gracias.</p>
+      <p>
+        En Adalab estamos encantados de proporcionarte la información que necesitas. Hemos creado formularios específicos para inscribirte como alumna, para ser voluntario/a y para empresas que quieran acoger a nuestras alumnas. Para otras consultas completa el siguiente formulario y nos prondremos en contancto contigo. Gracias.
+      </p>
+
       <form class="contact-form" action="#" method="post">
         <label for="name">Nombre</label>
-        <input type="text" name="name" value="">
+        <input id="name" type="text" name="name">
+
         <label for="family-name">Apellidos</label>
-        <input type="text" name="family-name" value="">
+        <input id="family-name" type="text" name="family-name">
+
         <label for="email">Correo electrónico</label>
-        <input type="email" name="email" value="">
+        <input id="email" type="email" name="email">
+
         <label for="phone">Teléfono móvil</label>
-        <input type="tel" name="phone" value="">
+        <input id="phone" type="tel" name="phone">
+
         <label for="message">Mensaje</label>
-        <textarea name="message" rows="8" cols="80"></textarea>
-        <input type="submit" name="" value="Enviar">
+        <textarea id="message" name="message" rows="8"></textarea>
+
+        <input type="submit" value="Enviar">
       </form>
     </main>
+
+
     <footer class="footer">
       <p>Adalab &copy; 2017</p>
-      <p><a href="#" class="link">política de cookies</a></p>
+      <p><a href="#" class="link">Política de cookies</a></p>
     </footer>
+
   </body>
 </html>

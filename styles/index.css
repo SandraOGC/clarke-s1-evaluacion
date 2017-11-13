@@ -1,7 +1,15 @@
 body {
+<<<<<<< HEAD:styles/index.css
   font-family: 'Rubik', sans-serif;
   color: #555; /* Si un hexadecimal es igual dos a dos se puede abreviar #AABBCC -> #ABC */
+=======
+  font-family: Rubik, sans-serif;
+  color: #555555;
+>>>>>>> 5692fc1c85d01a4c7f63284dbbf5537d428fdd70:css/index.css
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .header {
@@ -26,7 +34,12 @@ body {
   align-items: center;
   padding-left: 0;
   margin: 0 20px;
+<<<<<<< HEAD:styles/index.css
   text-transform: uppercase;
+=======
+}
+.menu li {
+>>>>>>> 5692fc1c85d01a4c7f63284dbbf5537d428fdd70:css/index.css
   list-style: none;
 }
 
@@ -35,8 +48,13 @@ body {
 }
 
 .menu a {
+<<<<<<< HEAD:styles/index.css
   /* Esto es para que herede el color de body, así solo lo cambiamos en 1 sitio */
   color: inherit;
+=======
+  text-transform: uppercase;
+  color: #555555;
+>>>>>>> 5692fc1c85d01a4c7f63284dbbf5537d428fdd70:css/index.css
 }
 
 .link {
@@ -52,15 +70,18 @@ body {
 .hero {
   margin-top: 100px;
   position: relative;
-  height: 300px;
+  flex: 1;
   background-image: url(http://adalab.es/wp-content/uploads/2017/02/banner_home_v3.jpeg);
+	background-position: center center;
   background-size: cover;
+  min-height: 100vh
 }
 
 .title {
   position: absolute;
-  top: 100px;
-  left: 50px;
+  top: 60px;
+  left: 20px;
+  margin: 0;
   font-size: 1em;
   font-weight: bold;
 
@@ -72,14 +93,22 @@ body {
 }
 
 .footer {
+<<<<<<< HEAD:styles/index.css
   padding: 30px 20px;
+=======
+  height: 100px;
+>>>>>>> 5692fc1c85d01a4c7f63284dbbf5537d428fdd70:css/index.css
   display: flex;
   align-items: center;
   background-color: #252525;
 }
 
 .footer a {
+<<<<<<< HEAD:styles/index.css
   color: #aaa;
+=======
+  color: #aaaaaa;
+>>>>>>> 5692fc1c85d01a4c7f63284dbbf5537d428fdd70:css/index.css
 }
 
 .footer p {
@@ -97,14 +126,26 @@ body {
 
   .title {
     font-size: 2em;
+    top: 20px;
   }
 
   .footer {
+<<<<<<< HEAD:styles/index.css
     padding: 30px ;
+=======
+    height: 150px;
+>>>>>>> 5692fc1c85d01a4c7f63284dbbf5537d428fdd70:css/index.css
   }
+}
 
+<<<<<<< HEAD:styles/index.css
   .hero {
     height: 500px;
+=======
+@media (min-height: 550px) {
+  .title {
+    top: 10%;
+>>>>>>> 5692fc1c85d01a4c7f63284dbbf5537d428fdd70:css/index.css
   }
 }
 
@@ -112,9 +153,13 @@ body {
 
   .title {
     font-size: 3em;
+    top: 40%;
+    left: 40px;
+    transform: translateY(-50%);
   }
 
   .footer {
+<<<<<<< HEAD:styles/index.css
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -123,6 +168,11 @@ body {
     height: 800px;
   }
 
+=======
+    height: 200px;
+  }
+
+>>>>>>> 5692fc1c85d01a4c7f63284dbbf5537d428fdd70:css/index.css
   .arrow {
     display: block;
     position: fixed;

@@ -94,6 +94,14 @@ textarea {
   min-height: 4.5em;
 }
 
+/*
+Este selector es complejo y no esperabamos que lo utilizaseis pero básicamente lo
+que indica es que los estilos que añadamos abajo se aplicarán a todos aquellos
+inputs que sean del tipo submit:
+
+<input type="submit" value="Enviar">
+*/
+
 input[type="submit"] {
   background-color: #3CDBC0;
   width: 100px;

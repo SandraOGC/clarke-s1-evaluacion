@@ -131,6 +131,27 @@ input[type="submit"] {
     flex-direction: row;
   }
 
+  /*
+  Con esta clase damos un ancho máximo al texto para mejorar la experiencia de usuario
+  Los textos excesivamente largos hacen que sea dificil saber donde está el final y
+  el principio de linea y dificultan la lectura, asi mismo, los textos muy pequeños hacen
+  que el ojo tenga que ir muy a menudo de derecha a izquierda para continuar leyendo lo
+  que hace al lector perder el ritmo de lectura.
+
+  Estos estilos no eran un requisito del ejercicio, pero nos parecía interesante añadirlo
+  para que nos vayamos acostumbrando a dar un ancho máximo al texto y mejorar así
+  la calidad de nuestro diseño.
+
+  Abajo se ha utilizado un ancho máximo para que se visualicen como máximo 75
+  caracteres por linea aproximadamente.
+  */
+
+  .text-max-width {
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .footer {
     padding: 30px ;
   }

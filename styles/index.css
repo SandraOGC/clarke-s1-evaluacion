@@ -6,13 +6,12 @@ body {
   font-family: 'Rubik', sans-serif;
   color: #555; /* Si un hexadecimal es igual dos a dos se puede abreviar #AABBCC -> #ABC */
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 
-  /*
-  Es típico usar un interlineado de entre 1.4 y 1.6 para mejorar la lectura
-  del texto y su estética
+  /* Esto sirve para darle un interlineado al código, mejorar su estética y mejorar la
+  experiencia del usuario durante la lectura
+
+  Lo normal es tener un interlineado de entre 1.4 y 1.6 para el texto del cuerpo de nuestra
+  página
   */
   line-height: 1.5;
 }
@@ -67,17 +66,24 @@ body {
 }
 
 /*
+ * Main
+ */
+
+.pad-top {
+  padding-top: 152px;
+}
+
+/*
  * Home
  */
 
 .hero {
-  margin-top: 100px;
   position: relative;
   flex-grow: 1;
   background-image: url(../images/hero-background-cover.jpeg);
 	background-position: center center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 400px; /* Para que en pantallas muy pequeñas la imagen de fondo no aparezca cortada */
 }
 
 .title {
@@ -100,8 +106,7 @@ body {
  */
 
 .contact {
-  margin-top: 150px;
-  padding: 20px;
+  padding: 170px 20px 20px;
 }
 
 .contact-form {
@@ -187,7 +192,7 @@ input[type="submit"] {
  * Arrow
  */
 
-.arrow {
+.button-up {
   display: none;
 }
 
@@ -199,6 +204,14 @@ input[type="submit"] {
 
   .header {
     flex-direction: row;
+  }
+
+  /*
+   * Main
+   */
+
+  .pad-top {
+    padding-top: 108px; /* Para que aparezca justo debajo de la cabecera */
   }
 
   /*
@@ -249,6 +262,7 @@ input[type="submit"] {
 }
 
 @media (min-width: 900px) {
+
   /*
    * Home
    */
@@ -277,26 +291,29 @@ input[type="submit"] {
    * Arrow
    */
 
-  .arrow {
+  .button-up {
     display: block;
     position: fixed;
     right: 20px;
     bottom: 20px;
-    width: 50px;
-    height: 50px;
-    font-size: 80px;
+    width: 40px;
+    height: 40px;
     background-color: #aaa;
     border-radius: 5px;
-  }
-
-  .arrow:hover {
-    background-color: #3CDBC0;
-  }
-
-  .arrow a {
     text-decoration: none;
-    line-height: 50px;
     padding: 8px;
     color: #fff;
+  }
+
+  .button-up-icon {
+    width: 24px;
+    margin-top: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button-up:hover {
+    background-color: #3CDBC0;
   }
 }

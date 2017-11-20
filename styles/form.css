@@ -2,6 +2,12 @@ body {
   font-family: 'Rubik', sans-serif;
   color: #555; /* Si un hexadecimal es igual dos a dos se puede abreviar #AABBCC -> #ABC */
   margin: 0;
+
+  /*
+  Es típico usar un interlineado de entre 1.4 y 1.6 para mejorar la lectura
+  del texto y su estética
+  */
+  line-height: 1.5;
 }
 
 .header {

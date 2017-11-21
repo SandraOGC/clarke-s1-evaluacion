@@ -55,7 +55,7 @@ body {
   margin-top: 100px;
   position: relative;
   flex: 1;
-  background-image: url(http://adalab.es/wp-content/uploads/2017/02/banner_home_v3.jpeg);
+  background-image: url(../images/hero-background-cover.jpeg);
 	background-position: center center;
   background-size: cover;
   min-height: 100vh
